@@ -108,6 +108,11 @@ body{
 .quiz-app .bullets .spans span.on {
   background-color: rgb(89, 89, 247);
 }
+.count-down{
+  font-weight: 600;
+  font-size: 25px;
+  color: #797d7e;
+}
 .results{
   display: none;
   margin-top: 50px;
