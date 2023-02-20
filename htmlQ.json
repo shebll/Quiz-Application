@@ -1,0 +1,34 @@
+[
+  {
+    "title":"why we use <br> tag" ,
+    "answer-1":"to make font bold",
+    "answer-2":"to make font italic",
+    "answer-3":"to make horizontal line",
+    "answer-4":"to make break line",
+    "right-answer":"to make break line"
+  },
+  {
+    "title":"why we use <hr> tag" ,
+    "answer-1":"to make font bold",
+    "answer-2":"to make horizontal line",
+    "answer-3":"to make break line",
+    "answer-4":"to make font italic",
+    "right-answer":"to make horizontal line"
+  },
+  {
+    "title":"what is HTML" ,
+    "answer-1":"HyperText Markup Language",
+    "answer-2":"to make horizontal line",
+    "answer-3":"to make break line",
+    "answer-4":"to make font italic",
+    "right-answer":"HyperText Markup Language"
+  },
+  {
+    "title":"why we use <table> tag" ,
+    "answer-1":"to make break line",
+    "answer-2":"to make horizontal line",
+    "answer-3":"defines a table",
+    "answer-4":"to make font bold",
+    "right-answer":"defines a table"
+  }
+]

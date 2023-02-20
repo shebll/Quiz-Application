@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.quiz-app{
+  margin: 50px auto;
+  width: 1000px;
+  background-color: #ebebeb;
+  padding: 25px;
+}
+.quiz-app .info{
+  color: rgb(12, 12, 12);
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  font-weight: bold;
+}
+.quiz-app .info span{
+  color: rgb(89, 89, 247);
+}
+.quiz-app .quiz-area{
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+}
+.quiz-app .quiz-area h2{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-size: 28px;
+  color: rgb(12, 12, 12);
+}
+.quiz-app .answers-area{
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: white;
+  padding: 20px;
+}
+.quiz-app .answers-area .answer:not(:last-child){
+  margin-bottom: 5px;
+}
+.quiz-app .answers-area .answer{
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  
+}
+.quiz-app .answers-area .answer label{
+  cursor: pointer;
+  display: block;
+  flex: 1;
+  padding: 15px 5px;
+  font-weight: bold;
+  color: #777;
+  font-size: 16px;
+}
+.quiz-app .answers-area .answer input:checked + label{
+  color: rgb(89, 89, 247);
+}
+.quiz-app .submit-btn{
+  background-color: rgb(89, 89, 247);
+  color: #fff;
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  display: block;
+  width: 20%;
+  font-size: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.quiz-app .bullets{
+  margin-top: 20px;
+  border-top: 1px solid #cfcfcf;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.quiz-app .bullets .spans {
+  display: flex;
+}
+.quiz-app .bullets .spans span{
+  flex: 1;
+  display: flex;
+  width: 25px;
+  height: 25px ;
+  margin-right: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #ddd;
+}
+.quiz-app .bullets .spans span.on {
+  background-color: rgb(89, 89, 247);
+}
+.results{
+  display: none;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 33px;
+  background-color:  #ffffff;
+  padding: 32px;
+  color: #2289ff;
+}
