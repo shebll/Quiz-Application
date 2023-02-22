@@ -1,0 +1,42 @@
+[
+  {
+    "title":"What is CSS?" ,
+    "answer-1":"CSS is a style sheet language",
+    "answer-2":"CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+    "answer-3":"CSS is the language used to style the HTML documents",
+    "answer-4":"All of the mentioned",
+    "right-answer":"All of the mentioned"
+  },
+  {
+    "title":"Which of the following CSS selectors are used to specify a group of elements?" ,
+    "answer-1":"tag",
+    "answer-2":"id",
+    "answer-3":"class",
+    "answer-4":"both class and tag",
+    "right-answer":"class"
+  },
+  {
+    "title":"Which of the following CSS property specifies the look and design of an outline?" ,
+    "answer-1":"outline-style",
+    "answer-2":"outline-format",
+    "answer-3":"outline-font",
+    "answer-4":"none of the mentioned",
+    "right-answer":"outline-style"
+  },
+  {
+    "title":"Which of the following CSS property sets the shadow for a box element?" ,
+    "answer-1":"set-shadow",
+    "answer-2":"box-shadow",
+    "answer-3":"shadow",
+    "answer-4":"canvas-shadow",
+    "right-answer":"box-shadow  "
+  },
+  {
+    "title":"Which of the following is not the property of the CSS box model?" ,
+    "answer-1":"margin",
+    "answer-2":"color",
+    "answer-3":"width",
+    "answer-4":"height",
+    "right-answer":"color"
+  }
+]

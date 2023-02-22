@@ -1,0 +1,42 @@
+[
+  {
+    "title":" Which of the following is not javascript data types?" ,
+    "answer-1":"Null type",
+    "answer-2":"Undefined type",
+    "answer-3":"Number type",
+    "answer-4":"All of the mentioned",
+    "right-answer":"All of the mentioned"
+  },
+  {
+    "title":"Why event handlers is needed in JS?" ,
+    "answer-1":"Why event handlers is needed in JS?",
+    "answer-2":"Adds innerHTML page to the code",
+    "answer-3":"Change the server location",
+    "answer-4":"Performs handling of exceptions and occurrences",
+    "right-answer":"Allows JavaScript code to alter the behaviour of windows"
+  },
+  {
+    "title":"Why JavaScript Engine is needed?" ,
+    "answer-1":"Both Compiling & Interpreting the JavaScript",
+    "answer-2":"Parsing the javascript",
+    "answer-3":"Interpreting the JavaScript",
+    "answer-4":"Compiling the JavaScript",
+    "right-answer":"Interpreting the JavaScript"
+  },
+  {
+    "title":"Which of the following scoping type does JavaScript use?" ,
+    "answer-1":"Sequential",
+    "answer-2":"Segmental",
+    "answer-3":"Lexical",
+    "answer-4":"Literal",
+    "right-answer":"Lexical"
+  },
+  {
+    "title":"What will be the output of the following JavaScript code?" ,
+    "answer-1":"short",
+    "answer-2":"123.56",
+    "answer-3":"tall",
+    "answer-4":"190",
+    "right-answer":"short"
+  }
+]

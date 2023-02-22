@@ -4,10 +4,31 @@ let answersArea = document.querySelector(".quiz-app .answers-area");
 let submitBtn = document.querySelector(".quiz-app .submit-btn");
 let results = document.querySelector(".quiz-app .results");
 let time = document.querySelector(".quiz-app .count-down");
+let btnChange = document.querySelector(".icon");
+let mune = document.querySelector(".quiz-app .info .category .mune ul");
+let languages = document.querySelectorAll(
+  ".quiz-app .info .category .mune ul li"
+);
 let countDownInterval;
 let rightAnswers = 0;
 let index = 0;
 //////function get the response text from json object ant turn into js object///////////
+window.addEventListener("load", () => {
+  getQuestions(`htmlQ.json`);
+});
+
+btnChange.addEventListener("click", () => {
+  mune.style.display = "block";
+});
+
+languages.forEach((language) => {
+  language.addEventListener("click", () => {
+    clearInterval(countDownInterval);
+    remove();
+    getQuestions(`${language.innerHTML.toLowerCase()}Q.json`);
+    mune.style.display = "none";
+  });
+});
 function getQuestions(link) {
   let myRequest = new XMLHttpRequest();
   myRequest.onreadystatechange = function () {
@@ -37,7 +58,7 @@ function getQuestions(link) {
 
         addData(qoestions[index], qoestionCount);
 
-        showResults(qoestionCount);
+        showResults(qoestions, qoestionCount);
       };
     }
   };
@@ -115,19 +136,35 @@ function checkAnswer(rightAnswer, qCount) {
   console.log(qCount);
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
-function showResults(qoestionCount) {
+function showResults(qoestions, qoestionCount) {
   if (index == qoestionCount) {
-    quizArea.remove();
-    answersArea.remove();
-    submitBtn.remove();
+    quizArea.style.display = "none";
+    answersArea.style.display = "none";
+    submitBtn.style.display = "none";
     let bullet = document.querySelector(".quiz-app .bullets ");
-    bullet.remove();
+    bullet.style.display = "none";
+
+    // remove();
+    // submitBtn.remove();
+
     let gradTag = document.createElement("h2");
     let gradText = document.createTextNode(
       `You Get ${rightAnswers} from ${qoestionCount}  `
     );
+    let answers = document.createElement("div");
+    answers.classList.add("right-answers");
+    qoestions.forEach((qoestion, i) => {
+      let a = document.createElement("h2");
+      let answersText = document.createTextNode(
+        `${i + 1} - ${qoestion["right-answer"]}`
+      );
+      a.appendChild(answersText);
+      answers.appendChild(a);
+    });
+
     gradTag.appendChild(gradText);
     results.appendChild(gradTag);
+    results.appendChild(answers);
     results.style.display = "block";
   }
 }
@@ -150,4 +187,10 @@ function countDown(d, qCount) {
     }, 1000);
   }
 }
-getQuestions("htmlQ.json");
+function remove() {
+  quizArea.innerHTML = "";
+  answersArea.innerHTML = "";
+
+  let bullet = document.querySelector(".quiz-app .bullets .spans ");
+  bullet.innerHTML = "";
+}

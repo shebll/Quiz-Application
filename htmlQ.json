@@ -32,11 +32,11 @@
     "right-answer":"defines a table"
   },
   {
-    "title":"why we use <table> tag" ,
+    "title":"why we use <bold> tag" ,
     "answer-1":"to make break line",
     "answer-2":"to make horizontal line",
     "answer-3":"defines a table",
     "answer-4":"to make font bold",
-    "right-answer":"defines a table"
+    "right-answer":"to make font bold"
   }
 ]
